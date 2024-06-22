@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex: 1;
+            padding: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            nav ul {
+                text-align: center;
+            }
+
+            nav ul li {
+                display: inline-block;
+                margin: 0 15px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .row {
+                display: flex;
+            }
+
+            .col {
+                flex: 1;
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+
+            nav ul li {
+                margin: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Responsive Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col" style="background: #f4f4f4;">Column 1</div>
+            <div class="col" style="background: #e4e4e4;">Column 2</div>
+            <div class="col" style="background: #d4d4d4;">Column 3</div>
+        </div>
+    </div>
+</body>
+</html>
